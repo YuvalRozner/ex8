@@ -1,16 +1,22 @@
 {
-  "homepage": "https://YuvalRozner.github.io/ex8/",
+  "homepage": "https://yuvalrozner.github.io/ex8/",
   "name": "ex8",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "dev": "vite",
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "vite build",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
+    
+    
+    
   },
   "dependencies": {
     "react": "^18.2.0",
